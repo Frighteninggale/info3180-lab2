@@ -6,6 +6,28 @@ from flask import render_template, request, redirect, url_for, flash
 # Routing for your application.
 ###
 
+def format_date_joined(date):
+    return date.strftime("%b, %Y")
+
+@app.route('/profile')
+def profile():
+    import datetime
+    join_date = datetime.date(2021, 3, 18)
+    formatted_date= format_date_joined(join_date)
+
+    profile_info = {
+        'name': 'Britney Gregs',
+        'username': 'brittywitty',
+        'location': 'Ocho Rios, Jamaica',
+        'bio': 'I am a new budding artist soon to be a household name with my art displayed in galleries everywhere. ;)',
+        'join_date': formatted_date,
+        'posts': 4,
+        'followers': 1350,
+        'following': 213
+    }
+
+    return render_template('profile.html', profile=profile_info)
+
 @app.route('/')
 def home():
     """Render website's home page."""

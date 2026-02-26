@@ -1,3 +1,97 @@
 body {
     padding-top: 5rem;
 }
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.profile-header h1 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.username {
+    color: #666;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.location {
+    color: #888;
+    margin: 5px 0;
+}
+
+.join-date {
+    color: #888;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.profile-bio {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.follow-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
